@@ -1,17 +1,15 @@
-//GCD 
-#include <stdio.h> 
-int gcd(int a, int b) 
-{ 
-if (b == 0) 
-return a; 
-else 
-return gcd(b, a % b); 
-} 
-int main() 
-{ 
-int x, y; 
-printf("Enter two numbers: "); 
-scanf("%d %d", &x, &y); 
-printf("GCD of %d and %d = %d\n", x, y, gcd(x, y)); 
-return 0; 
+#include <stdio.h>
+int main() {
+    int a, b, r;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    while (b != 0) {
+        r = b;
+        b = a % b;
+        a = r;
+    }
+
+    printf("GCD: %d\n", a);
+    return 0;
 }
