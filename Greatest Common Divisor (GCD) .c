@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main() {
-    int a, b, r;
+    int a, b, value;
     printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
 
     while (b != 0) {
-        r = b;
+        value = b;
         b = a % b;
-        a = r;
+        a = value;
     }
 
     printf("GCD: %d\n", a);
