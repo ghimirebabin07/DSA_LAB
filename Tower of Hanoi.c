@@ -9,13 +9,13 @@ void toh(int n, char source, char aux, char dest) {
         toh(n-1, aux, source, dest);
     }
 }
-
 int main() {
     int n;
-    printf("Enter number of disks: ");
+    printf("Enter the number of disks: ");
     scanf("%d", &n);
-
+    printf("The moves are:\n");
     toh(n, 'A', 'B', 'C');
-
     return 0;
 }
+
+
