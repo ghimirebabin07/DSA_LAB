@@ -14,7 +14,7 @@ int main() {
     printf("Enter the number of disks: ");
     scanf("%d", &n);
     printf("The moves are:\n");
-    toh(n, 'A', 'B', 'C');
+    toh(n, 'a', 'b', 'c');
     return 0;
 }
 
